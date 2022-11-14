@@ -12,4 +12,4 @@ df = df.applymap(lambda x: len(x), na_action="ignore")
 # plot
 
 fig = px.imshow(df, labels=dict(x="Oración", y="Párrafo", color="Extensión"))
-fig.show()
+fig.write_html("viz/Rosario Castellanos-Lección de cocina :: visualización extensión.html")
